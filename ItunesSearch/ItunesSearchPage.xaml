@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:ItunesSearch" x:Class="ItunesSearch.ItunesSearchPage">
+    <StackLayout>
+        <SearchBar Placeholder="Search artist" TextChanged="Handle_TextChanged" />
+        <ListView x:Name="listView">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ImageCell Text="{Binding ArtistName}" Detail="{Binding TrackName}" ImageSource="{Binding ArtworkUrl100}" />
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+</ContentPage>

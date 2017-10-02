@@ -1,0 +1,2 @@
+android.app.Application
+com.rasmus.josefsson.Itunes_Search
